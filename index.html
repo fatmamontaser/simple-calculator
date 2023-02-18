@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="calcValue" id="calcValue" placeholder="0" >
+        <div class="buttonOfcalc">
+            <button onclick="Clear()" style="background-color: crimson;" >AC</button>
+            <button  onclick="dele()" >DEL</button>
+            <button onclick="showValue('%')">%</button>
+            <button onclick="showValue('/')">/</button>
+        </div>
+        <div class="buttonOfcalc">
+            <button onclick="showValue('7')">7</button>
+            <button onclick="showValue('8')">8</button>
+            <button onclick="showValue('9')" >9</button>
+            <button onclick="showValue('*')">*</button>
+        </div>
+        <div class="buttonOfcalc">
+            <button onclick="showValue('6')" >6</button>
+            <button  onclick="showValue('5')">5</button>
+            <button onclick="showValue('4')" >4</button>
+            <button onclick="showValue('+')">+</button>
+        </div>
+        <div class="buttonOfcalc">
+            <button onclick="showValue('1')">1</button>
+            <button onclick="showValue('2')">2</button>
+            <button onclick="showValue('3')">3</button>
+            <button onclick="showValue('-')">-</button>
+        </div>
+        <div class="buttonOfcalc">
+            <button onclick="showValue('0')">0</button>
+            <button onclick="showValue('.')" >.</button>
+            <button class="equal" onclick="calc()">=</button>
+            
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
